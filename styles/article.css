@@ -1,21 +1,22 @@
 @import url('./includes/navbar.css');
 @import url('./includes/footer.css');
 @import url('./about.css');
+@import url('./blog.css');
 *:focus {
     outline: none;
   }
   
-  body {
-    margin-bottom: 100px;
-  }
+ 
   
  .container-mw-100{
      max-width: 100%;
      padding:0 30px
  }
-  
+  .mb-40{
+    margin-bottom: 40px;
+  }
   #container #category-section {
-    background-color: aqua;
+    background-color: transparent;
   }
   
   #article-section > p {
@@ -51,15 +52,14 @@
   }
   
   #article-link-section {
-    height: 150px;
+    height: 130px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
+   
+            justify-content: flex-start;
+    
         -ms-flex-align: center;
             align-items: center;
   }
@@ -88,6 +88,7 @@
   }
   
   #comment-section #comment-description {
+    color:#979797;
     text-align: center;
     margin-bottom: 15px;
   }
@@ -100,8 +101,9 @@
     width: 100%;
     padding: 10px;
     outline: none;
-    border: 1px solid grey;
+    border: 1px solid #ebebeb;
     border-radius: 3px;
+
   }
   
   #comment-section .text-area-div textarea:focus {
@@ -112,6 +114,8 @@
     position: relative;
     margin-right: 10px;
     width: 100%;
+    border: 1px solid #ebebeb;
+
   }
   
   #comment-section .input-div:last-child {
@@ -125,13 +129,18 @@
             transform: translateY(-55%);
     background-color: white;
     padding: 0 5px;
+    color: #979797;
+    
   }
-  
+  .mt-50{
+      margin-top: 40px;
+  }
   #comment-section .input-div input {
     width: 100%;
     height: 45px;
-    border: 1px solid grey;
+    border: 1px solid #ebebeb;
     border-radius: 3px;
+
     padding: 10px;
   }
   
@@ -195,7 +204,258 @@
     border-width: 1px 1px 0 0;
     border-color: #000;
 }
+.footer-post{
+    margin-bottom: 50px;
+}
+.post-navigation{
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+.post-navigation .nav-previous{
+    padding: 5px 0;
+    text-align: left;
+}
+.post-navigation .nav-links a {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+text-align: left;}
+.post-navigation .nav-links a .post_nav-text {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color:#979797;
+    display: block;
+}
+.post-navigation .nav-links a .nav-post-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: none;
+    text-align: left;
+    color:#0d0707;
+    text-decoration: none;
+    display: block;
+}
 
+.footer-post{
+  margin-bottom: 50px;
+ text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.footer-post a{
+  display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    word-wrap: break-word;
+    color:#0d0707;
+    text-align: left;
+    text-decoration: none;
+
+}
+
+
+.footer-post a span.first-span{
+text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color:#979797;
+line-height: 28px;
+}
+.footer-post a span.second-span{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+  color:#0d0707;
+  
+  }
+
+.comment-form-cookies{
+  text-align: center;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.comment-form-cookies input{
+
+box-sizing: border-box;
+    padding: 0;
+    margin-top: -2px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.comment-form-cookies input
+{
+  margin-bottom: 0;
+  text-align: center;
+  color:#979797;
+}
+.form-submit{
+  margin-bottom: 23px;
+  text-align: center;
+}
+.form-submit input{
+  border-radius: 3px;
+  width: 200px;
+    border: none;
+    background: #000;
+    color: #fff;
+    height: 50px;
+    padding: 13px 20px;
+    font-size: .75rem;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#article-section,#category-section{
+  padding:0 15px;
+}
+#category-section{
+  padding-left: 22px;
+}
+ .right .search {
+  text-align: center;
+}
+
+ .right .search input {
+  padding: 13px 50px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 2px;
+}
+
+ .right .search button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 2px;
+  background-color: black;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+ .right .search button:hover {
+  background-color: cyan;
+}
+
+ .right .search button i {
+  color: white;
+}
+
+ .right .categories h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+ .right .categories i {
+  color: #9d9d9d;
+}
+
+ .right .categories a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+ .right .post h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+ .right .post h5 {
+  font-size: 17px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+ .right .post h5:hover {
+  color: cyan;
+}
+
+ .right .post p {
+  font-size: 13px;
+}
+
+ .right .news {
+  text-align: center;
+  background-color: #e4e4e4;
+}
+
+ .right .news .btn input {
+  padding: 13px 20px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+ .right .news .btn button {
+  padding: 18px 10px;
+  border: none;
+  border-radius: 2px;
+  font-size: 10px;
+  color: white;
+  background-color: black;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+ .right .news .btn button:hover {
+  background-color: cyan;
+}
+
+ .right .meta h1 {
+  font-size: 25px;
+}
+
+ .right .meta h4 {
+  font-size: 16px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+ .right .meta h4:hover {
+  color: cyan;
+}
+
+ .right .tags h1 {
+  font-size: 25px;
+}
+
+ .right .tags .btns button {
+  border: 1px solid darkgray;
+  padding: 7px 15px;
+  border-radius: 4px;
+  background-color: transparent;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+ .right .tags .btns button:hover {
+  border-color: black;
+}
+
+.right .eti img{
+  width:100px;
+  height: 100px;
+}
   @media (min-width: 900px) {
     .article-multiple-image-section {
       -ms-grid-columns: auto auto;

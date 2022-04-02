@@ -7,13 +7,9 @@
     box-sizing: border-box;
 }
 
-.header-desktop .header-row {
-    background-color: transparent !important;
-}
 
-#header {
-    position: static;
-}
+
+
 
 #contact-top .about-bg-img {
     position: relative;

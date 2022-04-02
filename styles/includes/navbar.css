@@ -9,9 +9,14 @@
 #header {
   width: 100%;
   z-index: 999;
-  /* position: fixed; */
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 7%);
 }
 
+#header .menu a.active{
+  color:#2dbbf0 ;
+}
 .header-desktop {
   display: block;
   position: relative;
@@ -151,6 +156,7 @@
  display: none;
  max-width: 100%;
  padding: 0 30px;
+ background-color: #fff;
 }
 .header-mobile .logo{
   margin: 0 auto;
@@ -169,7 +175,6 @@
 
 .header-desktop .header-row {
   background-color: #fff !important;
-  box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 7%);
 }
 @media (max-width:1024px){
   .header-mobile{
